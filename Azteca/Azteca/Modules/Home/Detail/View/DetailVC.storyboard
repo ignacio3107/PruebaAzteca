@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="Y6W-OH-hqX" customClass="DetailVC" customModule="Azteca" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x56-n1-IT6">
+                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ngw-IF-NFC">
+                                        <rect key="frame" x="20" y="0.0" width="353" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cgm-Kc-ehL">
+                                        <rect key="frame" x="20" y="46" width="353" height="610"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kME-Df-w8N">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="610"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="kME-Df-w8N" firstAttribute="leading" secondItem="Cgm-Kc-ehL" secondAttribute="leading" id="9ya-m3-gbJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="kME-Df-w8N" secondAttribute="bottom" id="VSv-zl-nrT"/>
+                                            <constraint firstAttribute="trailing" secondItem="kME-Df-w8N" secondAttribute="trailing" id="fkC-ao-U2r"/>
+                                            <constraint firstItem="kME-Df-w8N" firstAttribute="top" secondItem="Cgm-Kc-ehL" secondAttribute="top" id="ft8-L3-56z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ngw-IF-NFC" secondAttribute="trailing" constant="20" id="AbE-DZ-Rez"/>
+                                    <constraint firstItem="Cgm-Kc-ehL" firstAttribute="leading" secondItem="x56-n1-IT6" secondAttribute="leading" constant="20" id="Bt4-Ld-ENR"/>
+                                    <constraint firstItem="Cgm-Kc-ehL" firstAttribute="top" secondItem="Ngw-IF-NFC" secondAttribute="bottom" constant="10" id="GB0-aQ-UGq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cgm-Kc-ehL" secondAttribute="bottom" constant="10" id="Nff-2l-HIj"/>
+                                    <constraint firstItem="Ngw-IF-NFC" firstAttribute="top" secondItem="x56-n1-IT6" secondAttribute="top" id="sCa-eg-UC3"/>
+                                    <constraint firstItem="Ngw-IF-NFC" firstAttribute="leading" secondItem="x56-n1-IT6" secondAttribute="leading" constant="20" id="uqT-x2-QbO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cgm-Kc-ehL" secondAttribute="trailing" constant="20" id="zE2-Go-179"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="x56-n1-IT6" secondAttribute="bottom" id="5FU-Hh-67A"/>
+                            <constraint firstItem="x56-n1-IT6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TZg-XN-fwW"/>
+                            <constraint firstItem="x56-n1-IT6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="gv9-0t-juc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="x56-n1-IT6" secondAttribute="trailing" id="wEH-cG-mFv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="kME-Df-w8N" id="1Fw-hZ-oR0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="131"/>
+        </scene>
+    </scenes>
+</document>

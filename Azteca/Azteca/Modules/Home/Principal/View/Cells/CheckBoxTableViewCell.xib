@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CheckBoxTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="CheckBoxTableViewCell" rowHeight="90" id="KGk-i7-Jjw" customClass="CheckBoxTableViewCell" customModule="Azteca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AT8-sM-pVz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <subviews>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYz-8e-AsQ">
+                                <rect key="frame" x="185" y="12" width="70" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NYz-8e-AsQ" secondAttribute="height" multiplier="5:4" id="ZJG-Tb-Lx9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36l-Vr-Txu">
+                                <rect key="frame" x="20" y="29.666666666666671" width="33" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTA-sM-kPE">
+                                <rect key="frame" x="275" y="27.666666666666671" width="25" height="25"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mrq-BW-ouq">
+                                        <rect key="frame" x="0.0" y="1.6666666666666643" width="25" height="22.000000000000004"/>
+                                        <color key="tintColor" systemColor="systemGrayColor"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="DFf-aH-PVd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mrq-BW-ouq" secondAttribute="bottom" id="IDw-sO-fXd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mrq-BW-ouq" secondAttribute="trailing" id="KO5-h1-Am2"/>
+                                    <constraint firstItem="Mrq-BW-ouq" firstAttribute="top" secondItem="OTA-sM-kPE" secondAttribute="top" id="UUJ-Xn-Z5d"/>
+                                    <constraint firstAttribute="width" constant="25" id="n4m-Zi-yAR"/>
+                                    <constraint firstItem="Mrq-BW-ouq" firstAttribute="leading" secondItem="OTA-sM-kPE" secondAttribute="leading" id="qLq-2T-aFy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NYz-8e-AsQ" firstAttribute="height" secondItem="AT8-sM-pVz" secondAttribute="height" multiplier="0.7" id="7Rs-MB-efV"/>
+                            <constraint firstItem="OTA-sM-kPE" firstAttribute="centerY" secondItem="AT8-sM-pVz" secondAttribute="centerY" id="LG2-58-VUN"/>
+                            <constraint firstItem="36l-Vr-Txu" firstAttribute="centerY" secondItem="AT8-sM-pVz" secondAttribute="centerY" id="Upg-yl-RkX"/>
+                            <constraint firstItem="NYz-8e-AsQ" firstAttribute="centerY" secondItem="AT8-sM-pVz" secondAttribute="centerY" id="VRa-JZ-9KP"/>
+                            <constraint firstItem="OTA-sM-kPE" firstAttribute="leading" secondItem="NYz-8e-AsQ" secondAttribute="trailing" constant="20" id="gbt-Ye-piN"/>
+                            <constraint firstAttribute="trailing" secondItem="OTA-sM-kPE" secondAttribute="trailing" constant="20" id="t9G-0O-5zp"/>
+                            <constraint firstItem="36l-Vr-Txu" firstAttribute="leading" secondItem="AT8-sM-pVz" secondAttribute="leading" constant="20" id="vCK-cw-luM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AT8-sM-pVz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NMj-H0-TOb"/>
+                    <constraint firstAttribute="bottom" secondItem="AT8-sM-pVz" secondAttribute="bottom" constant="10" id="SjB-PK-D8e"/>
+                    <constraint firstAttribute="trailing" secondItem="AT8-sM-pVz" secondAttribute="trailing" id="Z2X-EM-MRb"/>
+                    <constraint firstItem="AT8-sM-pVz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dTJ-y1-amo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="check" destination="Mrq-BW-ouq" id="Mvd-jK-OOF"/>
+                <outlet property="title" destination="36l-Vr-Txu" id="1Vh-aq-Jj0"/>
+                <outlet property="viewColor" destination="NYz-8e-AsQ" id="W63-6W-S2I"/>
+                <outlet property="viewRound" destination="AT8-sM-pVz" id="KKe-sK-Q4v"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="97.183098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
